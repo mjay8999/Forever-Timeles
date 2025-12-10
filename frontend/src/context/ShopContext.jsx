@@ -110,17 +110,19 @@ const ShopContextProvider = (props) => {
 
     const getProductsData = async () => {
         try {
-
+            console.log('Fetching products from:', backendUrl + '/api/product/list')
             const response = await axios.get(backendUrl + '/api/product/list')
+            console.log('Response:', response.data)
             if (response.data.success) {
                 setProducts(response.data.products.reverse())
+                console.log('Products loaded:', response.data.products.length)
             } else {
                 toast.error(response.data.message)
             }
 
         } catch (error) {
-            console.log(error)
-            toast.error(error.message)
+            console.log('Error fetching products:', error)
+            toast.error('Failed to load products: ' + (error.message || 'Unknown error'))
         }
     }
 

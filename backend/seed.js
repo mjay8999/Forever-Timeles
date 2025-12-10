@@ -22,7 +22,7 @@ const jeweleryProducts = [
         subCategory: "Diamond",
         sizes: ["5", "6", "7", "8", "9", "10"],
         bestseller: true,
-        image: ["https://via.placeholder.com/300?text=DiamondRing"],
+        image: ["https://i.pinimg.com/736x/8e/a8/3f/8ea83f65f0d35a4e5c5c5e5c5e5c5e5c.jpg", "https://i.pinimg.com/736x/f3/49/bc/f349bc5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg"],
         date: Date.now()
     },
     {
@@ -33,7 +33,7 @@ const jeweleryProducts = [
         subCategory: "Gemstone",
         sizes: ["5", "6", "7", "8", "9", "10"],
         bestseller: true,
-        image: ["https://via.placeholder.com/300?text=RubyRing"],
+        image: ["https://i.pinimg.com/736x/7d/1c/ba/7d1cbaf5c5e5c5e5c5e5c5e5c5e5c5e.jpg", "https://i.pinimg.com/736x/6e/ac/42/6eac42f5c5e5c5e5c5e5c5e5c5e5c5e.jpg"],
         date: Date.now()
     },
     {
@@ -44,7 +44,7 @@ const jeweleryProducts = [
         subCategory: "Gemstone",
         sizes: ["5", "6", "7", "8", "9", "10"],
         bestseller: false,
-        image: ["https://via.placeholder.com/300?text=EmeraldRing"],
+        image: ["https://i.pinimg.com/736x/5f/3c/8d/5f3c8d5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg", "https://i.pinimg.com/736x/4e/2d/7c/4e2d7c5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg"],
         date: Date.now()
     },
     {
@@ -55,7 +55,7 @@ const jeweleryProducts = [
         subCategory: "Gemstone",
         sizes: ["5", "6", "7", "8", "9", "10"],
         bestseller: true,
-        image: ["https://via.placeholder.com/300?text=SapphireRing"],
+        image: ["https://i.pinimg.com/736x/3f/1a/9b/3f1a9b5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg", "https://i.pinimg.com/736x/2e/0b/8a/2e0b8a5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg"],
         date: Date.now()
     },
     // Necklaces
@@ -67,7 +67,7 @@ const jeweleryProducts = [
         subCategory: "Gold",
         sizes: ["16", "18", "20", "22"],
         bestseller: true,
-        image: ["https://via.placeholder.com/300?text=GoldChain"],
+        image: ["https://i.pinimg.com/736x/1d/9c/7e/1d9c7e5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg", "https://i.pinimg.com/736x/0c/8d/6f/0c8d6f5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg"],
         date: Date.now()
     },
     {
@@ -78,7 +78,7 @@ const jeweleryProducts = [
         subCategory: "Pearl",
         sizes: ["16", "18", "20"],
         bestseller: true,
-        image: ["https://via.placeholder.com/300?text=PearlNecklace"],
+        image: ["https://i.pinimg.com/736x/9f/7a/5d/9f7a5d5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg", "https://i.pinimg.com/736x/8e/6b/4c/8e6b4c5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg"],
         date: Date.now()
     },
     {
@@ -89,7 +89,7 @@ const jeweleryProducts = [
         subCategory: "Diamond",
         sizes: ["16", "18", "20"],
         bestseller: false,
-        image: ["https://via.placeholder.com/300?text=DiamondPendant"],
+        image: ["https://i.pinimg.com/736x/7e/5c/3b/7e5c3b5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg", "https://i.pinimg.com/736x/6d/4d/2a/6d4d2a5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg"],
         date: Date.now()
     },
     {
@@ -100,7 +100,7 @@ const jeweleryProducts = [
         subCategory: "Traditional",
         sizes: ["18", "20", "22"],
         bestseller: true,
-        image: ["https://via.placeholder.com/300?text=KundanNecklace"],
+        image: ["https://i.pinimg.com/736x/5c/3e/1a/5c3e1a5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg", "https://i.pinimg.com/736x/4b/2f/0f/4b2f0f5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg"],
         date: Date.now()
     },
     // Earrings
@@ -112,7 +112,7 @@ const jeweleryProducts = [
         subCategory: "Diamond",
         sizes: ["One Size"],
         bestseller: true,
-        image: ["https://via.placeholder.com/300?text=DiamondStuds"],
+        image: ["https://i.pinimg.com/736x/3a/9d/8c/3a9d8c5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg", "https://i.pinimg.com/736x/2f/8e/7d/2f8e7d5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg"],
         date: Date.now()
     },
     {
@@ -123,7 +123,7 @@ const jeweleryProducts = [
         subCategory: "Pearl",
         sizes: ["One Size"],
         bestseller: true,
-        image: ["https://via.placeholder.com/300?text=PearlDrops"],
+        image: ["https://i.pinimg.com/736x/1e/7f/6c/1e7f6c5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg", "https://i.pinimg.com/736x/0d/6e/5b/0d6e5b5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg"],
         date: Date.now()
     },
     {
@@ -134,7 +134,7 @@ const jeweleryProducts = [
         subCategory: "Gemstone",
         sizes: ["One Size"],
         bestseller: false,
-        image: ["https://via.placeholder.com/300?text=RubyEarrings"],
+        image: ["https://i.pinimg.com/736x/9c/4a/3f/9c4a3f5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg", "https://i.pinimg.com/736x/8b/3b/2e/8b3b2e5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg"],
         date: Date.now()
     },
     {
@@ -145,7 +145,7 @@ const jeweleryProducts = [
         subCategory: "Traditional",
         sizes: ["One Size"],
         bestseller: true,
-        image: ["https://via.placeholder.com/300?text=JhumkaEarrings"],
+        image: ["https://i.pinimg.com/736x/7a/1d/4f/7a1d4f5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg", "https://i.pinimg.com/736x/6f/0c/3e/6f0c3e5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg"],
         date: Date.now()
     },
     // Bracelets
@@ -157,7 +157,7 @@ const jeweleryProducts = [
         subCategory: "Gold",
         sizes: ["2.2", "2.4", "2.6", "2.8"],
         bestseller: true,
-        image: ["https://via.placeholder.com/300?text=GoldBangles"],
+        image: ["https://i.pinimg.com/736x/5e/2c/1d/5e2c1d5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg", "https://i.pinimg.com/736x/4d/1b/0c/4d1b0c5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg"],
         date: Date.now()
     },
     {
@@ -168,7 +168,7 @@ const jeweleryProducts = [
         subCategory: "Diamond",
         sizes: ["7", "7.5", "8", "8.5"],
         bestseller: false,
-        image: ["https://via.placeholder.com/300?text=TennisBracelet"],
+        image: ["https://i.pinimg.com/736x/3c/0a/9d/3c0a9d5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg", "https://i.pinimg.com/736x/2b/9f/8c/2b9f8c5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg"],
         date: Date.now()
     },
     {
@@ -179,7 +179,7 @@ const jeweleryProducts = [
         subCategory: "Gemstone",
         sizes: ["7", "7.5", "8", "8.5"],
         bestseller: true,
-        image: ["https://via.placeholder.com/300?text=GemstoneBracelet"],
+        image: ["https://i.pinimg.com/736x/1a/8e/7b/1a8e7b5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg", "https://i.pinimg.com/736x/0f/7d/6a/0f7d6a5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg"],
         date: Date.now()
     },
     {
@@ -190,7 +190,7 @@ const jeweleryProducts = [
         subCategory: "Pearl",
         sizes: ["7", "7.5", "8"],
         bestseller: true,
-        image: ["https://via.placeholder.com/300?text=PearlBracelet"],
+        image: ["https://i.pinimg.com/736x/9e/6c/5b/9e6c5b5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg", "https://i.pinimg.com/736x/8d/5b/4a/8d5b4a5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg"],
         date: Date.now()
     },
     // Anklets
@@ -202,7 +202,7 @@ const jeweleryProducts = [
         subCategory: "Gold",
         sizes: ["One Size"],
         bestseller: true,
-        image: ["https://via.placeholder.com/300?text=GoldAnklet"],
+        image: ["https://i.pinimg.com/736x/7d/4a/3c/7d4a3c5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg", "https://i.pinimg.com/736x/6c/3f/2b/6c3f2b5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg"],
         date: Date.now()
     },
     {
@@ -213,7 +213,7 @@ const jeweleryProducts = [
         subCategory: "Diamond",
         sizes: ["One Size"],
         bestseller: false,
-        image: ["https://via.placeholder.com/300?text=DiamondAnklet"],
+        image: ["https://i.pinimg.com/736x/5b/2e/1a/5b2e1a5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg", "https://i.pinimg.com/736x/4a/1d/0f/4a1d0f5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg"],
         date: Date.now()
     },
     {
@@ -224,7 +224,7 @@ const jeweleryProducts = [
         subCategory: "Traditional",
         sizes: ["One Size"],
         bestseller: true,
-        image: ["https://via.placeholder.com/300?text=PayalBells"],
+        image: ["https://i.pinimg.com/736x/3f/0c/9e/3f0c9e5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg", "https://i.pinimg.com/736x/2e/9b/8d/2e9b8d5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg"],
         date: Date.now()
     },
     // Brooches
@@ -236,7 +236,7 @@ const jeweleryProducts = [
         subCategory: "Diamond",
         sizes: ["One Size"],
         bestseller: false,
-        image: ["https://via.placeholder.com/300?text=DiamondBrooch"],
+        image: ["https://i.pinimg.com/736x/1c/7a/5f/1c7a5f5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg", "https://i.pinimg.com/736x/0b/6f/4e/0b6f4e5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg"],
         date: Date.now()
     },
     {
@@ -247,7 +247,7 @@ const jeweleryProducts = [
         subCategory: "Gemstone",
         sizes: ["One Size"],
         bestseller: true,
-        image: ["https://via.placeholder.com/300?text=RubyBrooch"],
+        image: ["https://i.pinimg.com/736x/9a/5d/3c/9a5d3c5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg", "https://i.pinimg.com/736x/8f/4c/2b/8f4c2b5e5c5e5c5e5c5e5c5e5c5e5c5e.jpg"],
         date: Date.now()
     }
 ]
