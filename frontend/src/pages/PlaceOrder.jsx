@@ -117,34 +117,34 @@ const PlaceOrder = () => {
 
 
     return (
-        <form onSubmit={onSubmitHandler} className='flex flex-col sm:flex-row justify-between gap-4 pt-5 sm:pt-14 min-h-[80vh] border-t'>
+        <form onSubmit={onSubmitHandler} className='flex flex-col md:flex-row justify-between gap-6 md:gap-8 pt-6 sm:pt-8 md:pt-14 min-h-[80vh] border-t'>
             {/* ------------- Left Side ---------------- */}
-            <div className='flex flex-col gap-4 w-full sm:max-w-[480px]'>
+            <div className='flex flex-col gap-3 sm:gap-4 w-full md:max-w-[480px]'>
 
-                <div className='text-xl sm:text-2xl my-3'>
+                <div className='text-xl sm:text-2xl my-2 sm:my-3'>
                     <Title text1={'DELIVERY'} text2={'INFORMATION'} />
                 </div>
-                <div className='flex gap-3'>
-                    <input required onChange={onChangeHandler} name='firstName' value={formData.firstName} className='border border-gray-300 rounded py-1.5 px-3.5 w-full' type="text" placeholder='First name' />
-                    <input required onChange={onChangeHandler} name='lastName' value={formData.lastName} className='border border-gray-300 rounded py-1.5 px-3.5 w-full' type="text" placeholder='Last name' />
+                <div className='flex flex-col sm:flex-row gap-3'>
+                    <input required onChange={onChangeHandler} name='firstName' value={formData.firstName} className='border border-gray-300 rounded py-2 px-3 w-full text-sm' type="text" placeholder='First name' />
+                    <input required onChange={onChangeHandler} name='lastName' value={formData.lastName} className='border border-gray-300 rounded py-2 px-3 w-full text-sm' type="text" placeholder='Last name' />
                 </div>
-                <input required onChange={onChangeHandler} name='email' value={formData.email} className='border border-gray-300 rounded py-1.5 px-3.5 w-full' type="email" placeholder='Email address' />
-                <input required onChange={onChangeHandler} name='street' value={formData.street} className='border border-gray-300 rounded py-1.5 px-3.5 w-full' type="text" placeholder='Street' />
-                <div className='flex gap-3'>
-                    <input required onChange={onChangeHandler} name='city' value={formData.city} className='border border-gray-300 rounded py-1.5 px-3.5 w-full' type="text" placeholder='City' />
-                    <input onChange={onChangeHandler} name='state' value={formData.state} className='border border-gray-300 rounded py-1.5 px-3.5 w-full' type="text" placeholder='State' />
+                <input required onChange={onChangeHandler} name='email' value={formData.email} className='border border-gray-300 rounded py-2 px-3 w-full text-sm' type="email" placeholder='Email address' />
+                <input required onChange={onChangeHandler} name='street' value={formData.street} className='border border-gray-300 rounded py-2 px-3 w-full text-sm' type="text" placeholder='Street' />
+                <div className='flex flex-col sm:flex-row gap-3'>
+                    <input required onChange={onChangeHandler} name='city' value={formData.city} className='border border-gray-300 rounded py-2 px-3 w-full text-sm' type="text" placeholder='City' />
+                    <input onChange={onChangeHandler} name='state' value={formData.state} className='border border-gray-300 rounded py-2 px-3 w-full text-sm' type="text" placeholder='State' />
                 </div>
-                <div className='flex gap-3'>
-                    <input required onChange={onChangeHandler} name='zipcode' value={formData.zipcode} className='border border-gray-300 rounded py-1.5 px-3.5 w-full' type="number" placeholder='Zipcode' />
-                    <input required onChange={onChangeHandler} name='country' value={formData.country} className='border border-gray-300 rounded py-1.5 px-3.5 w-full' type="text" placeholder='Country' />
+                <div className='flex flex-col sm:flex-row gap-3'>
+                    <input required onChange={onChangeHandler} name='zipcode' value={formData.zipcode} className='border border-gray-300 rounded py-2 px-3 w-full text-sm' type="number" placeholder='Zipcode' />
+                    <input required onChange={onChangeHandler} name='country' value={formData.country} className='border border-gray-300 rounded py-2 px-3 w-full text-sm' type="text" placeholder='Country' />
                 </div>
-                <input required onChange={onChangeHandler} name='phone' value={formData.phone} className='border border-gray-300 rounded py-1.5 px-3.5 w-full' type="number" placeholder='Phone' />
+                <input required onChange={onChangeHandler} name='phone' value={formData.phone} className='border border-gray-300 rounded py-2 px-3 w-full text-sm' type="number" placeholder='Phone' />
             </div>
 
             {/* ------------- Right Side ------------------ */}
-            <div className='mt-8'>
+            <div className='mt-6 md:mt-0'>
 
-                <div className='mt-8 min-w-80'>
+                <div className='mt-0 md:mt-8 w-full md:min-w-80'>
                     <CartTotal />
                 </div>
 
