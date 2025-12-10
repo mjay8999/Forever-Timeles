@@ -5,6 +5,58 @@ import axios from 'axios'
 
 export const ShopContext = createContext();
 
+// Fallback products used when the API is unreachable
+const fallbackProducts = [
+    {
+        _id: 'static-ring-aurora',
+        name: 'Aurora Halo Ring',
+        description: 'Oval-cut centerpiece with a halo of pavé stones on a slim gold band.',
+        price: 18999,
+        image: ['https://i.pinimg.com/736x/4b/f0/0d/4bf00d0a9b7bca1af9db14c52ab5ad01.jpg'],
+        category: 'Women',
+        subCategory: 'Rings',
+        sizes: ['5', '6', '7', '8'],
+        bestseller: true,
+        date: 1733798400000
+    },
+    {
+        _id: 'static-necklace-luna',
+        name: 'Luna Pearl Necklace',
+        description: 'Graduated freshwater pearls on a hand-knotted silk strand.',
+        price: 12999,
+        image: ['https://i.pinimg.com/736x/2f/21/4b/2f214b3c309736613d98125f7c23710b.jpg'],
+        category: 'Women',
+        subCategory: 'Necklaces',
+        sizes: ['16 in', '18 in'],
+        bestseller: false,
+        date: 1733798400000
+    },
+    {
+        _id: 'static-bracelet-atlas',
+        name: 'Atlas Cuff Bracelet',
+        description: 'Sculpted cuff with clean lines and mirror polish finish.',
+        price: 14999,
+        image: ['https://i.pinimg.com/736x/cd/05/6f/cd056f9371f1fc8e2ea985dcb9cabb17.jpg'],
+        category: 'Unisex',
+        subCategory: 'Bracelets',
+        sizes: ['S', 'M', 'L'],
+        bestseller: true,
+        date: 1733798400000
+    },
+    {
+        _id: 'static-earring-nova',
+        name: 'Nova Drop Earrings',
+        description: 'Sleek droplet silhouette with handset zirconia for everyday shine.',
+        price: 8999,
+        image: ['https://i.pinimg.com/736x/da/9e/45/da9e459496273b26b83ee9a43eeeca91.jpg'],
+        category: 'Women',
+        subCategory: 'Earrings',
+        sizes: ['One Size'],
+        bestseller: false,
+        date: 1733798400000
+    }
+];
+
 const ShopContextProvider = (props) => {
 
     const currency = '₹';
@@ -122,7 +174,8 @@ const ShopContextProvider = (props) => {
 
         } catch (error) {
             console.log('Error fetching products:', error)
-            toast.error('Failed to load products: ' + (error.message || 'Unknown error'))
+            setProducts(fallbackProducts)
+            toast.error('Failed to load products: showing featured picks instead')
         }
     }
 
